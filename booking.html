@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/ffaf71a1c5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Reserveren</title>
+</head>
+
+<body>
+
+	<!-- Navbar section -->
+
+	<header>
+		<div class="container-fluid container-wrapper-nav">
+			<nav class="navbar fixed-top navbar-dark navbar-expand-xl">
+				<a class="navbar-brand" href="index.html">
+					<h2 id="logo">Kanoverhuur Vathorst</h2>
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+					<ul class="navbar nav">
+						<li class="nav-item mr-4"><a class="navlink" href="index.html">Home</a></li>
+						<li class="nav-item mr-4"><a class="navlink" href="canoes.html">Kano's &
+								Kayaks</a></li>
+						<li class="nav-item mr-4"><a class="navlink" href="routes.html">Routes</a></li>
+						<li class="nav-item mr-4 active"><a class="navlink" href="booking.html">Reserveren</a></li>
+						<li class="nav-item mr-4"><a class="navlink" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+    <!-- End of Navbar section -->
+
+	<!-- Jumbotron section -->
+
+	<div class="container-fluid paddle-background">
+		<div class="row">
+			<div class="col-12">
+				<div class="jumbotron callout text-center">
+					<h1 id="jumbotron-header">Reserveer je kano of kayak hier</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- End of Jumbotron section -->
+
+    <!-- Booking form section -->
+
+	<div class="row container-fluid booking-row">
+		<div class="col-12 booking-column">
+			<form>  <!-- I have omitted the action and method attributes in the form element on purpose because they will show an error when submitting -->
+				<div class="row">
+					<div class="col-12 booking-select">
+						<fieldset>
+							<legend class="booking-legend">Yes, I'd Like To Book These</legend>
+							<div class="row">
+								<div class="col-6">
+									<select class="form-control custom-select">
+                                        <option selected>0 Single Person Kayaks</option>
+                                        <option>1 Single Person kayak</option>
+                                        <option>2 Single Person kayaks</option>
+                                    </select>
+								</div>
+								<div class="col-6">
+									<select class="form-control custom-select">
+                                        <option selected>One hour: EUR 17,50 per kayak</option>
+                                        <option>Two hours: EUR 29,95 per kayak</option>
+                                        <option>Three hours: EUR 39,95 per kayak</option>
+                                        <option> 1 Day (max 8 hours) EUR 49,95 per kayak</option>
+                                    </select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<select class="form-control custom-select">
+                                        <option selected>0 Dual Person Kayaks</option>
+                                        <option>1 Dual Person kayak</option>
+                                        <option>2 Dual Person kayaks</option>
+                                    </select>
+								</div>
+								<div class="col-6">
+									<select class="form-control custom-select">
+                                        <option selected>One hour: EUR 17,50 per kayak</option>
+                                        <option>Two hours: EUR 29,95 per kayak</option>
+                                        <option>Three hours: EUR 39,95 per kayak</option>
+                                        <option> 1 Day (max 8 hours) EUR 49,95 per kayak</option>
+                                    </select>
+								</div>
+							</div>
+                            <div class="row">
+                                <div class="col-6">
+        						    <select class="form-control custom-select">
+                                        <option selected>0 Canadian Family Canoes</option>
+                                        <option>1 Canadian Family Canoe</option>
+                                        <option>2 Canadian Family Canoes</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-control custom-select">
+                                        <option selected>One hour: EUR 17,50 per kayak</option>
+                                        <option>Two hours: EUR 29,95 per kayak</option>
+                                        <option>Three hours: EUR 39,95 per kayak</option>
+                                        <option> 1 Day (max 8 hours) EUR 49,95 per kayak</option>
+                                    </select>
+                                </div>
+                            </div>
+						</fieldset>
+					</div>
+				</div>
+				<fieldset>
+					<legend class="booking-legend">My Preferred Date & Time</legend>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-6">
+								<label for="start-time">From:</label>
+                                <input type="datetime-local" class="form-control" id="start-time" name="start-time" />                               
+							</div>
+							<div class="col-6">
+                            <label for="end-time">To:</label>
+                            <input type="datetime-local" class="form-control" id="end-time" name="end-time" />
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend class="booking-legend">Please Confirm My Reservation At</legend>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-6">
+                                <div class="input-container">
+								<i class="fa fa-user icon"></i>
+								<input type="text" class="form-control input-field" name="fname" id="fname" placeholder="First Name" required />
+                                </div>
+                            </div>
+							<div class="col-6">
+								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required />
+                            </div>
+							<div class="col-12">
+								<div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                               	<input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required />
+					            </div>
+                            </div>
+							<div class="col-12">
+                                <div class="input-container">
+                                <i class="fa fa-phone icon"></i>
+								<input type="tel" class="form-control" name="telephone" id="telephone" value="06-12345678" required />
+					            </div>
+                            </div>
+							<div class="col-12">
+								<label for="comments">Additional Comments:</label>
+								<textarea name="comments" id="comments" rows="5" class="form-control" placeholder="I'd like to add..."></textarea>
+							</div>
+							<div class="col-12">
+                                <label for="agree" class="general-conditions">I agree to the <a href="assets/downloads/GenCon_NL.pdf" target="_blank" rel="noopener">general conditions
+                                <span class="sr-only">Download link</span></a> (in Dutch)</label>
+								<input type="checkbox" id="agree" name="agree" value="agree" class="checkbox" checked />
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-success btn-large">Confirm</button>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+    <!-- End of Booking form section -->
+
+	<!--Footer section -->
+
+    <footer>
+        <div class="container-fluid footer-socials">
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube-square" aria-hidden="true"></i>
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target="_blank" rel="noopener">
+                        <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                        <span class="sr-only">Pinterest</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                2020 Copyright: Rien Hazeleger. All rights reserved
+            </div>
+        </div>
+    </footer>
+    
+    <!-- End of Footer section -->
+
+    <!-- Script section -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+    
+    <!-- End of Script section -->
+
+</body>
+
+</html>
