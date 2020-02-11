@@ -845,6 +845,13 @@ body {
     .canoe-description {
         height: 350px;
     }
+    .hero-image,
+    .markenhaven-image,
+    .routes-background,
+    .canoes-background,
+    .paddle-background {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-width: 572px) {
